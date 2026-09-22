@@ -21,7 +21,6 @@ import androidx.compose.ui.unit.dp
 @Composable
 fun BanderaMexico(modifier: Modifier = Modifier) {
     Row(modifier = modifier.fillMaxSize()) {
-        // Franja verde[cite: 1]
         Box(
             modifier = Modifier
                 .weight(1f)
