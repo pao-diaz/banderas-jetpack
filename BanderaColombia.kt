@@ -10,7 +10,21 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
-
+class MainActivity: ComponentActivity()
+{
+    override fun onCreate(savedInstanceState: Bundle?)
+    {
+        super.onCreate(savedInstanceState)
+        enableEdgeToEdge()
+        setContent {
+            BanderasTheme() {
+                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
+                    BanderaColombia(modifier = Modifier.padding(innerPadding))
+                }
+            }
+        }
+    }
+}
 @Composable
 fun BanderaColombia(modifier: Modifier = Modifier) {
     Column(modifier = modifier.fillMaxSize()) {
