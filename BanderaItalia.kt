@@ -14,9 +14,9 @@ import androidx.compose.ui.tooling.preview.Preview
 @Composable
 fun BanderaItalia(modifier: Modifier = Modifier) {
     Row(modifier = modifier.fillMaxSize()) {
-        Box(Modifier.weight(1f).fillMaxHeight().background(Color(0xFF009246))) // Verde
-        Box(Modifier.weight(1f).fillMaxHeight().background(Color.White))      // Blanco
-        Box(Modifier.weight(1f).fillMaxHeight().background(Color(0xFFCE2B37))) // Rojo
+        Box(Modifier.weight(1f).fillMaxHeight().background(Color(0xFF009246)))
+        Box(Modifier.weight(1f).fillMaxHeight().background(Color.White))
+        Box(Modifier.weight(1f).fillMaxHeight().background(Color(0xFFCE2B37)))
     }
 }
 
